@@ -108,6 +108,7 @@ public class BaseUtility {
 public static void getJvmRepoting(String jasonpath) {
 		
 		File f = new File("C:\\Users\\Balaji S\\EESL WORKSPACE\\SmokeTestEcommerce\\Reports\\JVM_Reports");
+		//File f = new File("C:\\Users\\Abisha Rajesh R\\git\\SmokeTestEcommerce\\Reports\\JVM Report");
 		
 		Configuration c = new Configuration(f,"EESL Ecommerce");
 		

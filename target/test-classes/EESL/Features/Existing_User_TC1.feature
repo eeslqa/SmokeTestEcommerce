@@ -49,19 +49,7 @@ And Step45: To check whether eesl X icon link is present on the homepage.
 Then Step46: To check whether eesl Instagram icon link is present on the homepage.
 And Failure Reporting
 
-Scenario Outline: Validate the functionality of the "<User_Type>" Login with Valid Credentials.
-		Given Step1: Launch EESL Application on Google Chrome Browser.
-    When Step2: validate User able to reach Login Screen Succesfully.
-    Then Step3: validate User able to pass username on Username TextBox as "<Username>"
-    And Step4: validate User able to pass password on password TextBox as "<Password>" "<User_Type>".
-    Then Step4: validate User able to click LoginButton.
-    And Step5: validate User able to reach Dashborad screen."<User_Type>"
-    Then Failure Reporting
-    
-Examples:
-|User_Type|Username|Password|
-|B2B|abishaone@yopmail.com|Qwerty@123|
-|B2C|Abhijiet| @bhijietM1|
+
 
 
 

@@ -17,11 +17,11 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pom.eesl.HomePageElements;
+import pom.eesl.POMExistingUserTC1;
 import utility.eesl.BaseUtility;
 
-public class HomePage_Validation extends BaseUtility {
-	HomePageElements hp = new HomePageElements();
+public class Existing_User_TC1 extends BaseUtility {
+	POMExistingUserTC1 hp = new POMExistingUserTC1();
 	SoftAssert sa = new SoftAssert();
 	List<String> failed = new LinkedList<>();
 
@@ -38,7 +38,7 @@ public class HomePage_Validation extends BaseUtility {
 		try {
 			launchChromeBrowser("https://eeslpreprod.tangentia.com/");
 			toMaximize();
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			
 			fwaitpage("EESL India - QA . EESL India - QA");
 			
@@ -70,7 +70,7 @@ public class HomePage_Validation extends BaseUtility {
 	public void step2_to_check_whether_eesl_logo_is_present_on_the_homepage() throws IOException {
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			
 			boolean result = hp.getEeslLogo().isDisplayed();
 			sa.assertEquals(result, true,"EESL Logo Validation");
@@ -97,7 +97,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			
 			boolean result = hp.getBetaLabel().isDisplayed();
 			sa.assertEquals(result, true,"Step3: To check whether Beta Label is present on the homepage.");
@@ -122,7 +122,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getSearchbar().isDisplayed();
 			boolean result1 = hp.getSearchbutton().isDisplayed();
@@ -155,7 +155,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getSignupLoginicon().isDisplayed();
 			boolean result1 = hp.getSignuploginLabel().isDisplayed();
@@ -188,7 +188,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getLanguagedropdown().isDisplayed();
 			
@@ -215,7 +215,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getWishlisticon().isDisplayed();
 			
@@ -242,7 +242,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getCarticon().isDisplayed();
 
@@ -269,7 +269,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getElectricCookingmenu().isDisplayed();
 			
@@ -296,7 +296,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getLightingmenu().isDisplayed();
 			
@@ -323,7 +323,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getCoolingmenu().isDisplayed();
 			
@@ -349,7 +349,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getUrjaveermenu().isDisplayed();
 			
@@ -375,7 +375,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getKnowmoremenu().isDisplayed();
 			
@@ -401,7 +401,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getAboutUs().isDisplayed();
 			
@@ -427,7 +427,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getShopbycategorylabel().isDisplayed();
 			
@@ -453,7 +453,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();\
 			
 			int size = hp.getProductnavigationbutton().size();
@@ -482,7 +482,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getFeaturedproductlabel().isDisplayed();
 			
@@ -508,7 +508,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			int size = hp.getProductnavigationbutton().size();
 			
@@ -536,7 +536,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getRefundPolicy().isDisplayed();
 			
@@ -562,7 +562,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getOrderCancellation().isDisplayed();
 			
@@ -588,7 +588,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getReplacementReturnPolicylink().isDisplayed();
 			
@@ -614,7 +614,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getWarrantyPolicylink().isDisplayed();
 			
@@ -640,7 +640,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getFaqlink().isDisplayed();
 			
@@ -666,7 +666,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getShippingLink().isDisplayed();
 			
@@ -692,7 +692,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getPrivacyLink().isDisplayed();
 			
@@ -720,7 +720,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getConditionsLink().isDisplayed();
 			
@@ -746,7 +746,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getAboutLink().isDisplayed();
 			
@@ -772,7 +772,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getContactusLink().isDisplayed();
 			
@@ -798,7 +798,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getSearchlink().isDisplayed();
 			
@@ -824,7 +824,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getRecentlyviewedproductslink().isDisplayed();
 			
@@ -850,7 +850,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getCompareproductslistlink().isDisplayed();
 			
@@ -876,7 +876,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getComingSoonlink().isDisplayed();
 			
@@ -902,7 +902,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getMyaccountlink().isDisplayed();
 			
@@ -928,7 +928,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getOrderslink().isDisplayed();
 		
@@ -954,7 +954,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getShoppingcartlink().isDisplayed();
 			
@@ -980,7 +980,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getWishlistlink().isDisplayed();
 			
@@ -1006,7 +1006,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getMakeinindia().isDisplayed();
 			
@@ -1032,7 +1032,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getSwatchbharat().isDisplayed();
 			
@@ -1058,7 +1058,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getMygov().isDisplayed();
 			
@@ -1084,7 +1084,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getSamanvay().isDisplayed();
 			
@@ -1110,7 +1110,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getTia().isDisplayed();
 			
@@ -1135,7 +1135,7 @@ public class HomePage_Validation extends BaseUtility {
 	public void step42_to_check_whether_copywright_info_is_present_on_the_homepage() {
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getCopywright().isDisplayed();
 			
@@ -1161,7 +1161,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getFacebook().isDisplayed();
 			
@@ -1187,7 +1187,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getYoutube().isDisplayed();
 			
@@ -1213,7 +1213,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getTwitter().isDisplayed();
 			sa.assertEquals(result, true,"Step45: To check whether eesl X icon link is present on the homepage.");
@@ -1238,7 +1238,7 @@ public class HomePage_Validation extends BaseUtility {
 
 		
 		try {
-			hp = new HomePageElements();
+			hp = new POMExistingUserTC1();
 			//sa = new SoftAssert();
 			boolean result = hp.getInstagram().isDisplayed();
 			
@@ -1263,10 +1263,11 @@ public class HomePage_Validation extends BaseUtility {
 	public void failure_reporting() {
 		boolean empty = failed.isEmpty();
 	    if (empty==false) {
+	    	scenario.log("The Failed Test Steps are:");
 	    	for (String string : failed) {
 		    	JTextArea area = new JTextArea(string);
 		    	area.setForeground(Color.red);
-		    	scenario.log("The Failed Test Steps are:");
+		    	
 		    	scenario.log(string);
 			}
 		}

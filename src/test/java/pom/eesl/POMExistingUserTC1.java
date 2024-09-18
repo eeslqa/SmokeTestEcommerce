@@ -10,9 +10,9 @@ import utility.eesl.BaseUtility;
 
 
 
-public class HomePageElements extends BaseUtility {
+public class POMExistingUserTC1 extends BaseUtility {
 	
-	public HomePageElements() {
+	public POMExistingUserTC1() {
 		PageFactory.initElements(driver, this);
 	}
 
