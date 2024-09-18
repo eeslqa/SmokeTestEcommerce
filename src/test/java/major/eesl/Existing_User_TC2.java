@@ -328,7 +328,7 @@ public class Existing_User_TC2 extends BaseUtility {
 	    	 else {
 	    		 scenario.log("Failed: Failed to navigate to the Login Page");
 				 scenario.log("Failed: Welcome messeage is not present on the homepage.");
-				 failed.add("Step1.1: The user is able to navigate and verify the login page.");
+				 failed.add("Step2: validate User able to reach Login Screen Succesfully.");
 				 generalscreenshotadd(scenario);
 			}
 	    	 
@@ -355,7 +355,7 @@ public class Existing_User_TC2 extends BaseUtility {
 			scenario.log("failed due below error: Please contact Automation Test Developer");
 			scenario.log("Error message: "+message);
 			sa1.assertEquals(true, false, "Element not found");
-			failed1.add("Step3: validate User able to pass username on Username TextBox as {string}");
+			failed1.add("Step3: validate User able to pass username on Username TextBox");
 			generalscreenshotadd(scenario);
 		}
 	}
@@ -371,11 +371,11 @@ public class Existing_User_TC2 extends BaseUtility {
 			scenario.log("failed due below error: Please contact Automation Test Developer");
 			scenario.log("Error message: "+message);
 			sa1.assertEquals(true, false, "Element not found");
-			failed1.add("Step3: validate User able to pass username on Username TextBox as {string}");
+			failed1.add("Step4: validate User able to pass password on password TextBox as {string}");
 			generalscreenshotadd(scenario);
 		}
 	}
-	@Then("Step4: validate User able to click LoginButton.")
+	@Then("Step5: validate User able to click LoginButton.")
 	public void step4_validate_user_able_to_click_login_button() {
 		try {   
 			eu2= new POMExistingUserTC2();
@@ -387,13 +387,78 @@ public class Existing_User_TC2 extends BaseUtility {
 			scenario.log("failed due below error: Please contact Automation Test Developer");
 			scenario.log("Error message: "+message);
 			sa1.assertEquals(true, false, "Element not found");
-			failed1.add("Step4: validate User able to click LoginButton.");
+			failed1.add("Step5: validate User able to click LoginButton.");
 			generalscreenshotadd(scenario);
 		}
 	}
-	@Then("Step5: validate User able to successfully logged into the EESL ecommerce.")
+	@Then("Step6: validate User able to successfully logged into the EESL ecommerce.")
 	public void step5_validate_user_able_to_successfully_logged_into_the_eesl_ecommerce() {
-	   
+		try {   
+			eu2= new POMExistingUserTC2();
+			 Actions ac = new Actions(driver);
+			 ac.moveToElement(eu2.getLoginaccount()).build().perform();
+			 eu2.getMyaccount().click();
+			 Thread.sleep(3000);
+			 fwait(eu2.getCustomerinfolabel());
+			 boolean displayed = eu2.getCustomerinfolabel().isDisplayed();
+			 if (displayed) {
+				 try {
+					eu2.getBussinessprofiles().click();
+					Thread.sleep(2000);
+					boolean displayed2 = eu2.getGstnumber().isDisplayed();
+					sa1.assertEquals(displayed, true,"Element not found");
+					if (displayed2) {
+						scenario.log("Passed: User successfuly logged into the B2B account");
+					}
+				} catch (Exception e) {
+					scenario.log("Passed: User successfuly logged into the B2C account");
+				}
+				
+			}else {
+				scenario.log("failed: User unable to log into the account");
+				sa1.assertEquals(false, true,"Element not found");
+				failed1.add("Step6: validate User able to successfully logged into the EESL ecommerce.");
+			}
+			 generalscreenshotadd(scenario);
+			
+		} catch (Exception e) {
+			String message = e.getMessage();
+			scenario.log("failed due below error: Please contact Automation Test Developer");
+			scenario.log("Error message: "+message);
+			sa1.assertEquals(true, false, "Element not found");
+			failed1.add("Step6: validate User able to successfully logged into the EESL ecommerce.");
+			generalscreenshotadd(scenario);
+		}
+		
+	}
+	@Then("Step7: validate User able to successfully logged out from the EESL ecommerce.")
+	public void step7_validate_user_able_to_successfully_logged_out_from_the_eesl_ecommerce() {
+	    try {
+	    	eu2= new POMExistingUserTC2();
+	    	 Actions ac = new Actions(driver);
+			 ac.moveToElement(eu2.getLoginaccount()).build().perform();
+			 eu2.getLogout().click();
+			 Thread.sleep(3000);
+			 ac.moveToElement(eu2.getSignupLoginicon()).build().perform();
+			 boolean displayed = eu2.getLogin().isDisplayed();
+			 sa1.assertEquals(displayed, true,"Element not found");
+			 if (displayed) {
+				 scenario.log("Passed: User successfuly logged out from the account");
+			}else {
+				scenario.log("Passed: User unable to logged out from the account");
+				failed1.add("Step7: validate User able to successfully logged out from the EESL ecommerce.");
+				sa1.assertEquals(true, false,"Element not found");
+			}
+			 Thread.sleep(1500);
+			 elementscreenshotadd(eu2.getLogin(), scenario);
+		} catch (Exception e) {
+			String message = e.getMessage();
+			scenario.log("failed due below error: Please contact Automation Test Developer");
+			scenario.log("Error message: "+message);
+			sa1.assertEquals(true, false, "Element not found");
+			failed1.add("Step7: validate User able to successfully logged out from the EESL ecommerce.");
+			generalscreenshotadd(scenario);
+		}
 	}
 	@Then("Failure Reporting TC2B")
 	public void failure_reporting_tc2b() {

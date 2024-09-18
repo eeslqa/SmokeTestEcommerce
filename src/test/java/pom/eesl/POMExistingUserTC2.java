@@ -30,7 +30,31 @@ public class POMExistingUserTC2 extends BaseUtility {
 @FindBy(xpath="//a[@class='google-btn']") private WebElement googleloginbutton;
 @FindBy(xpath="//span[@class='pi-user-6']")private WebElement signupLoginicon;
 @FindBy(xpath="//div[contains(text(),'Login was unsuccessful. Please correct the errors and try again.')]")private WebElement invaliderrormsg;
+@FindBy(xpath="//h4[@class='customer-name-text']")private WebElement loginaccount;
+@FindBy(xpath="//a[contains(text(),'My account')]")private WebElement myaccount;
+@FindBy(xpath="//h1[contains(text(),'My account - Customer info')]")private WebElement customerinfolabel;
+@FindBy(xpath="//a[contains(text(),'Business Profiles')]")private WebElement bussinessprofiles;
+@FindBy(xpath="//th[contains(text(),'GST Number')]")private WebElement gstnumber;
+@FindBy(xpath="//a[contains(text(),'Log out')]")private WebElement logout;
 
+public WebElement getLogout() {
+	return logout;
+}
+public WebElement getBussinessprofiles() {
+	return bussinessprofiles;
+}
+public WebElement getGstnumber() {
+	return gstnumber;
+}
+public WebElement getLoginaccount() {
+	return loginaccount;
+}
+public WebElement getMyaccount() {
+	return myaccount;
+}
+public WebElement getCustomerinfolabel() {
+	return customerinfolabel;
+}
 public WebElement getInvaliderrormsg() {
 	return invaliderrormsg;
 }

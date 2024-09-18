@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="60.66" tests="3" skipped="0" failures="1" errors="0">
-<testcase classname="Existing_User_TC2" name="Existing user tries to login with invalid credentials" time="24.029">
+<testsuite name="Cucumber" time="111.761" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Existing_User_TC2" name="Existing user tries to login with invalid credentials" time="31.742">
 <failure type="java.lang.AssertionError" message="The following asserts failed:
 	Element not found expected [false] but found [true]">
 <![CDATA[java.lang.AssertionError: The following asserts failed:
@@ -26,25 +26,27 @@ Then Step11: User Click the LoginButton unable to Login and get This Field is Re
 And Failure Reporting TC2A..................................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Existing_User_TC2" name="Validate the functionality of the &quot;&lt;User_Type&gt;&quot; Login with Valid Credentials. - Example #1.1" time="17.186">
+<testcase classname="Existing_User_TC2" name="Validate the functionality of the &quot;&lt;User_Type&gt;&quot; Login with Valid Credentials. - Example #1.1" time="43.21">
 <system-out><![CDATA[
 Given Step1: Launch EESL Application on Google Chrome Browser for TC2B......passed
 When Step2: validate User able to reach Login Screen Succesfully............passed
-Then Step3: validate User able to pass username on Username TextBox as "abishaone@yopmail.com".passed
-And Step4: validate User able to pass password on password TextBox as "Qwerty@123"..passed
-Then Step4: validate User able to click LoginButton.........................passed
-And Step5: validate User able to successfully logged into the EESL ecommerce..passed
+Then Step3: validate User able to pass username on Username TextBox as "henry.wipro18@yopmail.com".passed
+And Step4: validate User able to pass password on password TextBox as "Admin@1234"..passed
+Then Step5: validate User able to click LoginButton.........................passed
+And Step6: validate User able to successfully logged into the EESL ecommerce..passed
+And Step7: validate User able to successfully logged out from the EESL ecommerce..passed
 Then Failure Reporting TC2B.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Existing_User_TC2" name="Validate the functionality of the &quot;&lt;User_Type&gt;&quot; Login with Valid Credentials. - Example #1.2" time="19.245">
+<testcase classname="Existing_User_TC2" name="Validate the functionality of the &quot;&lt;User_Type&gt;&quot; Login with Valid Credentials. - Example #1.2" time="36.465">
 <system-out><![CDATA[
 Given Step1: Launch EESL Application on Google Chrome Browser for TC2B......passed
 When Step2: validate User able to reach Login Screen Succesfully............passed
-Then Step3: validate User able to pass username on Username TextBox as "henrygeorge@yopmail.com".passed
-And Step4: validate User able to pass password on password TextBox as "Qwerty@1234"..passed
-Then Step4: validate User able to click LoginButton.........................passed
-And Step5: validate User able to successfully logged into the EESL ecommerce..passed
+Then Step3: validate User able to pass username on Username TextBox as "gops06@yopmail.com".passed
+And Step4: validate User able to pass password on password TextBox as "Admin@1234"..passed
+Then Step5: validate User able to click LoginButton.........................passed
+And Step6: validate User able to successfully logged into the EESL ecommerce..passed
+And Step7: validate User able to successfully logged out from the EESL ecommerce..passed
 Then Failure Reporting TC2B.................................................passed
 ]]></system-out>
 </testcase>

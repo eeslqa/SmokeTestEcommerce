@@ -20,14 +20,15 @@ And   Failure Reporting TC2A
     When  Step2: validate User able to reach Login Screen Succesfully.
     Then  Step3: validate User able to pass username on Username TextBox as "<Username>"
     And   Step4: validate User able to pass password on password TextBox as "<Password>".
-    Then  Step4: validate User able to click LoginButton.
-    And   Step5: validate User able to successfully logged into the EESL ecommerce.
+    Then  Step5: validate User able to click LoginButton.
+    And   Step6: validate User able to successfully logged into the EESL ecommerce.
+    And   Step7: validate User able to successfully logged out from the EESL ecommerce.
     Then  Failure Reporting TC2B
     
 Examples:
 |User_Type|Username|Password|
-|B2B|abishaone@yopmail.com|Qwerty@123|
-|B2C|henrygeorge@yopmail.com|Qwerty@1234|
+|B2B|henry.wipro18@yopmail.com|Admin@1234|
+|B2C|gops06@yopmail.com|Admin@1234|
 
 
 
