@@ -1,53 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="111.761" tests="3" skipped="0" failures="1" errors="0">
-<testcase classname="Existing_User_TC2" name="Existing user tries to login with invalid credentials" time="31.742">
-<failure type="java.lang.AssertionError" message="The following asserts failed:
-	Element not found expected [false] but found [true]">
-<![CDATA[java.lang.AssertionError: The following asserts failed:
-	Element not found expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at major.eesl.Existing_User_TC2.failure_reporting_tc2_a(Existing_User_TC2.java:270)
-	at ?.Failure Reporting TC2A(file:///C:/Users/Balaji%20S/EESL%20WORKSPACE/SmokeTestEcommerce/src/test/resources/EESL/Features/Existing_User_TC2.feature:16)
+<testsuite name="Cucumber" time="77.155" tests="8" skipped="0" failures="3" errors="0">
+<testcase classname="Existing_User_TC3" name="Search the product from the EESL E-Commerce. &quot;&lt;Type&gt;&quot; - Example #1.1" time="16.959">
+<system-out><![CDATA[
+Given Step1: TC3A Launch EESL Application on Google Chrome Browser..........passed
+And Step2: TC3A validate User able to enter search value to the Search_Textbox "Emergency LED Bulb-10 Watt , 1050 Lumens"..passed
+Then Step3: TC3A validate User able to click search button..................passed
+And Step4: TC3A validate user navigate to search results page."Valid_Test_Data".passed
+Then Step5: TC3A validate the search results should be relavent to the search data "Emergency LED Bulb-10 Watt , 1050 Lumens" "Valid_Test_Data"..passed
+And Step6: TC3A Failure Reporting TC3A......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Existing_User_TC3" name="Search the product from the EESL E-Commerce. &quot;&lt;Type&gt;&quot; - Example #1.2" time="15.691">
+<system-out><![CDATA[
+Given Step1: TC3A Launch EESL Application on Google Chrome Browser..........passed
+And Step2: TC3A validate User able to enter search value to the Search_Textbox "1.0 TR Super Efficient 5 Star Split AC"..passed
+Then Step3: TC3A validate User able to click search button..................passed
+And Step4: TC3A validate user navigate to search results page."Valid_Test_Data".passed
+Then Step5: TC3A validate the search results should be relavent to the search data "1.0 TR Super Efficient 5 Star Split AC" "Valid_Test_Data"..passed
+And Step6: TC3A Failure Reporting TC3A......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Existing_User_TC3" name="Search the product from the EESL E-Commerce. &quot;&lt;Type&gt;&quot; - Example #1.3" time="15.844">
+<system-out><![CDATA[
+Given Step1: TC3A Launch EESL Application on Google Chrome Browser..........passed
+And Step2: TC3A validate User able to enter search value to the Search_Textbox "Fan"..passed
+Then Step3: TC3A validate User able to click search button..................passed
+And Step4: TC3A validate user navigate to search results page."Valid_Test_Data".passed
+Then Step5: TC3A validate the search results should be relavent to the search data "Fan" "Valid_Test_Data"..passed
+And Step6: TC3A Failure Reporting TC3A......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Existing_User_TC3" name="Search the product from the EESL E-Commerce. &quot;&lt;Type&gt;&quot; - Example #1.4" time="13.621">
+<system-out><![CDATA[
+Given Step1: TC3A Launch EESL Application on Google Chrome Browser..........passed
+And Step2: TC3A validate User able to enter search value to the Search_Textbox "amazon basics - 50W LED Bulb, Cool White (Base B22, Pack of 1)"..passed
+Then Step3: TC3A validate User able to click search button..................passed
+And Step4: TC3A validate user navigate to search results page."Invalid_Test_Data".passed
+Then Step5: TC3A validate the search results should be relavent to the search data "amazon basics - 50W LED Bulb, Cool White (Base B22, Pack of 1)" "Invalid_Test_Data"..passed
+And Step6: TC3A Failure Reporting TC3A......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Existing_User_TC3" name="Search the product from the EESL E-Commerce. &quot;&lt;Type&gt;&quot; - Example #1.5" time="14.611">
+<system-out><![CDATA[
+Given Step1: TC3A Launch EESL Application on Google Chrome Browser..........passed
+And Step2: TC3A validate User able to enter search value to the Search_Textbox ""..passed
+Then Step3: TC3A validate User able to click search button..................passed
+And Step4: TC3A validate user navigate to search results page."Negative"....passed
+Then Step5: TC3A validate the search results should be relavent to the search data "" "Negative"..passed
+And Step6: TC3A Failure Reporting TC3A......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Existing_User_TC3" name="Filter the search results by choosing advanced search option.&quot;&lt;Type&gt;&quot; - Example #1.1" time="0.122">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf941d7fdf3e23ee9ef3c853ce57a868, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\BALAJI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65275/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf941d7fdf3e23ee9ef3c853ce57a868">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf941d7fdf3e23ee9ef3c853ce57a868, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\BALAJI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65275/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf941d7fdf3e23ee9ef3c853ce57a868
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at major.eesl.Hooks.closeBrow(Hooks.java:32)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given Step1: Launch EESL Application on Google Chrome Browser...............passed
-When Step1.1: The user is able to navigate and verify the login page........passed
-When Step2: The user enters invalid Email. "eeslqa@gmail.com"...............passed
-And Step3: The user enters invalid password "Tangentia@123".................passed
-Then Step4: The user clicks on the login button.............................passed
-And Step5: An error message Login was unsuccessful. Please correct the errors and try again should be displayed..passed
-Then Step6: The user should remain on the login page........................passed
-And Step7: User left Blank EmailID on Email Textbox as " "..................passed
-Then Step8: User left Blank password on password Textbox as " ".............passed
-And Step9: User Click the LoginButton unable to Login and get This Field is Required message under the both Textbox..passed
-Then Step11: User Click the LoginButton unable to Login and get This Field is Required message under the both Textbox..passed
-And Failure Reporting TC2A..................................................failed
+Given Step1: TC3B Launch EESL Application on Google Chrome Browser..........pending
+And Step2: TC3B validate User able to enter search value to the Search_Textbox "1.0 TR Super Efficient 5 Star Split AC"..skipped
+Then Step3: TC3B validate user able to filter the search results by category and manufacturer."Cooling >> Air Conditioning" "EESL".skipped
+And Step4: TC3B validate User able to click search button...................skipped
+And Step5: TC3B validate user navigate to search results page...............skipped
+Then Step6: TC3B validate the search results should be relevent to the search data and as per the filter added."1.0 TR Super Efficient 5 Star Split AC" "Cooling >> Air Conditioning" "EESL" "Valid_Test_Data".skipped
+And Step7: TC3B Failure Reporting TC3B......................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Existing_User_TC2" name="Validate the functionality of the &quot;&lt;User_Type&gt;&quot; Login with Valid Credentials. - Example #1.1" time="43.21">
+<testcase classname="Existing_User_TC3" name="Filter the search results by choosing advanced search option.&quot;&lt;Type&gt;&quot; - Example #1.2" time="0.007">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf941d7fdf3e23ee9ef3c853ce57a868, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\BALAJI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65275/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf941d7fdf3e23ee9ef3c853ce57a868">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf941d7fdf3e23ee9ef3c853ce57a868, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\BALAJI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65275/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf941d7fdf3e23ee9ef3c853ce57a868
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at major.eesl.Hooks.closeBrow(Hooks.java:32)
+]]>
+</failure>
 <system-out><![CDATA[
-Given Step1: Launch EESL Application on Google Chrome Browser for TC2B......passed
-When Step2: validate User able to reach Login Screen Succesfully............passed
-Then Step3: validate User able to pass username on Username TextBox as "henry.wipro18@yopmail.com".passed
-And Step4: validate User able to pass password on password TextBox as "Admin@1234"..passed
-Then Step5: validate User able to click LoginButton.........................passed
-And Step6: validate User able to successfully logged into the EESL ecommerce..passed
-And Step7: validate User able to successfully logged out from the EESL ecommerce..passed
-Then Failure Reporting TC2B.................................................passed
+Given Step1: TC3B Launch EESL Application on Google Chrome Browser..........pending
+And Step2: TC3B validate User able to enter search value to the Search_Textbox "1200W Induction Cooktop with Slim Body and Premium Quality Features"..skipped
+Then Step3: TC3B validate user able to filter the search results by category and manufacturer."Electric Cooking >> Induction Cooktop" "ALL".skipped
+And Step4: TC3B validate User able to click search button...................skipped
+And Step5: TC3B validate user navigate to search results page...............skipped
+Then Step6: TC3B validate the search results should be relevent to the search data and as per the filter added."1200W Induction Cooktop with Slim Body and Premium Quality Features" "Electric Cooking >> Induction Cooktop" "ALL" "Valid_Test_Data".skipped
+And Step7: TC3B Failure Reporting TC3B......................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Existing_User_TC2" name="Validate the functionality of the &quot;&lt;User_Type&gt;&quot; Login with Valid Credentials. - Example #1.2" time="36.465">
+<testcase classname="Existing_User_TC3" name="Filter the search results by choosing advanced search option.&quot;&lt;Type&gt;&quot; - Example #1.3" time="0.009">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf941d7fdf3e23ee9ef3c853ce57a868, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\BALAJI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65275/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf941d7fdf3e23ee9ef3c853ce57a868">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf941d7fdf3e23ee9ef3c853ce57a868, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\BALAJI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65275/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf941d7fdf3e23ee9ef3c853ce57a868
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at major.eesl.Hooks.closeBrow(Hooks.java:32)
+]]>
+</failure>
 <system-out><![CDATA[
-Given Step1: Launch EESL Application on Google Chrome Browser for TC2B......passed
-When Step2: validate User able to reach Login Screen Succesfully............passed
-Then Step3: validate User able to pass username on Username TextBox as "gops06@yopmail.com".passed
-And Step4: validate User able to pass password on password TextBox as "Admin@1234"..passed
-Then Step5: validate User able to click LoginButton.........................passed
-And Step6: validate User able to successfully logged into the EESL ecommerce..passed
-And Step7: validate User able to successfully logged out from the EESL ecommerce..passed
-Then Failure Reporting TC2B.................................................passed
+Given Step1: TC3B Launch EESL Application on Google Chrome Browser..........pending
+And Step2: TC3B validate User able to enter search value to the Search_Textbox "ac"..skipped
+Then Step3: TC3B validate user able to filter the search results by category and manufacturer."Electric Cooking >> Induction Cooktop" "EESL".skipped
+And Step4: TC3B validate User able to click search button...................skipped
+And Step5: TC3B validate user navigate to search results page...............skipped
+Then Step6: TC3B validate the search results should be relevent to the search data and as per the filter added."ac" "Electric Cooking >> Induction Cooktop" "EESL" "InValid_TestData".skipped
+And Step7: TC3B Failure Reporting TC3B......................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

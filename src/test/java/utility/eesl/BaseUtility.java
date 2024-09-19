@@ -49,6 +49,7 @@ import net.masterthought.cucumber.ReportBuilder;
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
+import pom.eesl.POMExistingUserTC1;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -655,6 +656,7 @@ public static byte[] convertBufferedImageToByteArray(BufferedImage image, String
     baos.close();
     return imageInBytes;
 }
+
 
 }
 

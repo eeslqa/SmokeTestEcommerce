@@ -9,7 +9,7 @@ import utility.eesl.BaseUtility;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "C:\\Users\\Balaji S\\EESL WORKSPACE\\SmokeTestEcommerce\\src\\test\\resources\\EESL\\Features",glue ="major.eesl",dryRun=false,monochrome = true,tags="@login",plugin = {
+@CucumberOptions(features = "C:\\Users\\Balaji S\\EESL WORKSPACE\\SmokeTestEcommerce\\src\\test\\resources\\EESL\\Features",glue ="major.eesl",dryRun=false,monochrome = true,tags="@search",plugin = {
 		"html:C:\\Users\\Balaji S\\EESL WORKSPACE\\SmokeTestEcommerce\\Reports\\HTML_Reports\\eeslReport.html",
 		"json:C:\\Users\\Balaji S\\EESL WORKSPACE\\SmokeTestEcommerce\\Reports\\Json_Reports\\eeslReport.json",
 		"junit:C:\\Users\\Balaji S\\EESL WORKSPACE\\SmokeTestEcommerce\\Reports\\Junit_Reports\\eeslReport.xml",})

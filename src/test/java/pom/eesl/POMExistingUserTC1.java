@@ -84,7 +84,23 @@ public WebElement getWarrantyPolicylink() {
 @FindBy(xpath="//a[@href='https://www.youtube.com/channel/UC27eyqekKsTNBVW3dAsItBA']")private WebElement youtube;
 @FindBy(xpath="//a[@href='https://www.instagram.com/eeslawarenessmission/']")private WebElement instagram;
 @FindBy(xpath="//span[contains(text(),'Copyright')]")private WebElement copywright;
+@FindBy(xpath="//h2[@class='product-title']//a")private List<WebElement> searchresults;
+@FindBy(xpath="//div[contains(text(),'No products were found that matched your criteria.')]")private WebElement nosearchresults;
+@FindBy(xpath="//strong[contains(text(),'Please enter the keyword or a valid keyword.')]")private WebElement negativesearchpopmsg;
+@FindBy(xpath="//div[@class='swal2-actions']//button[contains(text(),'OK')]")private WebElement negativesearchpopmsgokbtn;
 
+public WebElement getNegativesearchpopmsg() {
+	return negativesearchpopmsg;
+}
+public WebElement getNegativesearchpopmsgokbtn() {
+	return negativesearchpopmsgokbtn;
+}
+public WebElement getNosearchresults() {
+	return nosearchresults;
+}
+public List<WebElement> getSearchresults() {
+	return searchresults;
+}
 public WebElement getEeslLogo() {
 	return eeslLogo;
 }
